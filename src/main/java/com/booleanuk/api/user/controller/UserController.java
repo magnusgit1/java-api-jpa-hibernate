@@ -19,7 +19,7 @@ public class UserController {
 
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {
-        return new ResponseEntity<>(this.repo.findAll(), HttpStatus.FOUND);
+        return new ResponseEntity<>(this.repo.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("{id}")

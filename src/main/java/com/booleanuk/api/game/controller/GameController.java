@@ -20,7 +20,7 @@ public class GameController {
     
     @GetMapping
     public ResponseEntity<List<Game>> getAllGames(){
-        return new ResponseEntity<>(this.repo.findAll(), HttpStatus.FOUND);
+        return new ResponseEntity<>(this.repo.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("{id}")
